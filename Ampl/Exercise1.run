@@ -1,0 +1,6 @@
+reset;
+model Exercise1.mod;
+data  Exercise1.dat;
+option solver cplex;
+solve;
+display X,Y,Cost;

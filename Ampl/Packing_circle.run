@@ -1,0 +1,20 @@
+
+reset; 
+option randseed 0; 
+model Packing_circle.mod; 
+option solver minos;
+param sol; 
+let sol:=-10000; 
+for {i in 1..200} 
+{ 
+	reset data x; 
+	reset data y; 
+	reset data r;  
+	solve; 
+	if (r>sol) then 
+		{
+		let sol:=r;
+		} 
+} 
+display x, y, r;
+printf "Solution trouve= %f\n", sol; 

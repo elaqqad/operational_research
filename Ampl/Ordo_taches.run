@@ -1,0 +1,6 @@
+reset;
+model Ordo_taches.mod;
+data  Ordo_taches.dat;
+option solver cplex;
+solve;
+display Rang,Succ,LaDurreTotale;
