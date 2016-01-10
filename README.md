@@ -1,3 +1,3 @@
+#Operational research
 
-
-Some pronlems in operational research
+Some problems in operational research: circle packing, task schudeling,...
